@@ -988,6 +988,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8906100900335424996, guid: 2610a246ce80eea4cbb779c7d896c503, type: 3}
+      propertyPath: _force
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8906100900831957281, guid: 2610a246ce80eea4cbb779c7d896c503, type: 3}
+      propertyPath: _force
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 8906100900877427191, guid: 2610a246ce80eea4cbb779c7d896c503, type: 3}
       propertyPath: Health
       value: 
@@ -996,6 +1004,10 @@ PrefabInstance:
       propertyPath: ScoreNum
       value: 
       objectReference: {fileID: 237051268004445410}
+    - target: {fileID: 8906100900944776081, guid: 2610a246ce80eea4cbb779c7d896c503, type: 3}
+      propertyPath: _force
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 8906100901342581541, guid: 2610a246ce80eea4cbb779c7d896c503, type: 3}
       propertyPath: Health
       value: 
@@ -1004,6 +1016,10 @@ PrefabInstance:
       propertyPath: ScoreNum
       value: 
       objectReference: {fileID: 237051268004445410}
+    - target: {fileID: 8906100901490169895, guid: 2610a246ce80eea4cbb779c7d896c503, type: 3}
+      propertyPath: _force
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 8906100901536894270, guid: 2610a246ce80eea4cbb779c7d896c503, type: 3}
       propertyPath: Health
       value: 
@@ -1020,6 +1036,10 @@ PrefabInstance:
       propertyPath: ScoreNum
       value: 
       objectReference: {fileID: 237051268004445410}
+    - target: {fileID: 8906100902005600982, guid: 2610a246ce80eea4cbb779c7d896c503, type: 3}
+      propertyPath: _force
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 8906100902087361995, guid: 2610a246ce80eea4cbb779c7d896c503, type: 3}
       propertyPath: Health
       value: 

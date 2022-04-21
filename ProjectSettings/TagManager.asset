@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - GarbageCan
+  - EndPoint
+  - Handle
+  - Handle2
+  - Handle3
+  - Handle4
+  - Handle5
+  - GarbageCan2
+  - GarbageCan3
+  - GarbageCan4
+  - GarbageCan5
+  - OrganicWaste
+  - InorganicWaste
+  - RecycledWaste
+  - IndustrialWaste
+  - ConstructionWaste
+  - GarbageCanEnd
+  - ToxicWaste
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

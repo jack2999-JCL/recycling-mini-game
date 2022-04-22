@@ -18,7 +18,6 @@ TagManager:
   - OrganicWaste
   - InorganicWaste
   - RecycledWaste
-  - IndustrialWaste
   - ConstructionWaste
   - GarbageCanEnd
   - ToxicWaste

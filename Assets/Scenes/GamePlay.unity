@@ -798,7 +798,7 @@ PrefabInstance:
     - target: {fileID: 425833889837327015, guid: e6f121cd5c965eb4a89606e6751fcecc, type: 3}
       propertyPath: _listTrash.Array.data[0]
       value: 
-      objectReference: {fileID: 8212114802872684450, guid: 6656cd4e9200c114e9b714d82d8f6319, type: 3}
+      objectReference: {fileID: 8701424012086205378, guid: ae3904cac4bab354e9d00571a624b13d, type: 3}
     - target: {fileID: 425833889837327015, guid: e6f121cd5c965eb4a89606e6751fcecc, type: 3}
       propertyPath: _listTrash.Array.data[1]
       value: 

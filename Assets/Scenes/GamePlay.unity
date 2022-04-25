@@ -213,6 +213,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -4.97
       objectReference: {fileID: 0}
+    - target: {fileID: 391999702443634533, guid: 425782cb61ccff745a2fd72bd7ad2da0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 391999702443634535, guid: 425782cb61ccff745a2fd72bd7ad2da0, type: 3}
       propertyPath: StartGame
       value: 
@@ -369,6 +373,10 @@ PrefabInstance:
       propertyPath: StartGame
       value: 
       objectReference: {fileID: 237051268444289063}
+    - target: {fileID: 391999703060361555, guid: 425782cb61ccff745a2fd72bd7ad2da0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.3
+      objectReference: {fileID: 0}
     - target: {fileID: 391999703105592998, guid: 425782cb61ccff745a2fd72bd7ad2da0, type: 3}
       propertyPath: StartGame
       value: 
@@ -376,6 +384,10 @@ PrefabInstance:
     - target: {fileID: 391999703105592998, guid: 425782cb61ccff745a2fd72bd7ad2da0, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 391999703161134478, guid: 425782cb61ccff745a2fd72bd7ad2da0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.3
       objectReference: {fileID: 0}
     - target: {fileID: 391999703161134481, guid: 425782cb61ccff745a2fd72bd7ad2da0, type: 3}
       propertyPath: StartGame
@@ -515,7 +527,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 391999703927743094, guid: 425782cb61ccff745a2fd72bd7ad2da0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 391999703927743096, guid: 425782cb61ccff745a2fd72bd7ad2da0, type: 3}
       propertyPath: StartGame
@@ -756,7 +768,7 @@ PrefabInstance:
       objectReference: {fileID: 8745342537229707070, guid: 0f87ea895d401f945acde645f42660e9, type: 3}
     - target: {fileID: 425833889837327017, guid: e6f121cd5c965eb4a89606e6751fcecc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 425833889980143693, guid: e6f121cd5c965eb4a89606e6751fcecc, type: 3}
       propertyPath: StartGame
@@ -804,7 +816,7 @@ PrefabInstance:
       objectReference: {fileID: 4010423632963893102, guid: ad269f395adac0b4d94b5d4b24903a8f, type: 3}
     - target: {fileID: 425833890232773281, guid: e6f121cd5c965eb4a89606e6751fcecc, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 425833890287313144, guid: e6f121cd5c965eb4a89606e6751fcecc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1258,6 +1270,10 @@ PrefabInstance:
       propertyPath: m_Center.x
       value: 8.18073
       objectReference: {fileID: 0}
+    - target: {fileID: 8906100900451108992, guid: 2610a246ce80eea4cbb779c7d896c503, type: 3}
+      propertyPath: m_Name
+      value: Object5
+      objectReference: {fileID: 0}
     - target: {fileID: 8906100900451108993, guid: 2610a246ce80eea4cbb779c7d896c503, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5600047
@@ -1322,6 +1338,10 @@ PrefabInstance:
       propertyPath: m_Center.x
       value: 8.18073
       objectReference: {fileID: 0}
+    - target: {fileID: 8906100900877427186, guid: 2610a246ce80eea4cbb779c7d896c503, type: 3}
+      propertyPath: m_Name
+      value: GarbageCan4
+      objectReference: {fileID: 0}
     - target: {fileID: 8906100900877427187, guid: 2610a246ce80eea4cbb779c7d896c503, type: 3}
       propertyPath: m_LocalPosition.y
       value: -4.5499997
@@ -1365,6 +1385,10 @@ PrefabInstance:
     - target: {fileID: 8906100900944776083, guid: 2610a246ce80eea4cbb779c7d896c503, type: 3}
       propertyPath: m_Center.x
       value: 8.18073
+      objectReference: {fileID: 0}
+    - target: {fileID: 8906100901259772183, guid: 2610a246ce80eea4cbb779c7d896c503, type: 3}
+      propertyPath: m_Name
+      value: Object1
       objectReference: {fileID: 0}
     - target: {fileID: 8906100901259772184, guid: 2610a246ce80eea4cbb779c7d896c503, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1410,6 +1434,10 @@ PrefabInstance:
       propertyPath: _force
       value: 350
       objectReference: {fileID: 0}
+    - target: {fileID: 8906100901536894265, guid: 2610a246ce80eea4cbb779c7d896c503, type: 3}
+      propertyPath: m_Name
+      value: GarbageCan1
+      objectReference: {fileID: 0}
     - target: {fileID: 8906100901536894266, guid: 2610a246ce80eea4cbb779c7d896c503, type: 3}
       propertyPath: m_LocalPosition.y
       value: -4.5499997
@@ -1434,9 +1462,17 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -0.95
       objectReference: {fileID: 0}
+    - target: {fileID: 8906100901636617604, guid: 2610a246ce80eea4cbb779c7d896c503, type: 3}
+      propertyPath: m_Name
+      value: Object4
+      objectReference: {fileID: 0}
     - target: {fileID: 8906100901636617605, guid: 2610a246ce80eea4cbb779c7d896c503, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.7519999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8906100901685713461, guid: 2610a246ce80eea4cbb779c7d896c503, type: 3}
+      propertyPath: m_Name
+      value: GarbageCan2
       objectReference: {fileID: 0}
     - target: {fileID: 8906100901685713465, guid: 2610a246ce80eea4cbb779c7d896c503, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1474,9 +1510,17 @@ PrefabInstance:
       propertyPath: m_Center.x
       value: 8.18073
       objectReference: {fileID: 0}
+    - target: {fileID: 8906100902043168522, guid: 2610a246ce80eea4cbb779c7d896c503, type: 3}
+      propertyPath: m_Name
+      value: Object2
+      objectReference: {fileID: 0}
     - target: {fileID: 8906100902043168523, guid: 2610a246ce80eea4cbb779c7d896c503, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.7519999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8906100902087361990, guid: 2610a246ce80eea4cbb779c7d896c503, type: 3}
+      propertyPath: m_Name
+      value: GarbageCan5
       objectReference: {fileID: 0}
     - target: {fileID: 8906100902087361991, guid: 2610a246ce80eea4cbb779c7d896c503, type: 3}
       propertyPath: m_LocalPosition.y

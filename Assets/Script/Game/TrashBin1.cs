@@ -6,6 +6,7 @@ public class TrashBin1 : MonoBehaviour
 {
     public UI_GamePlay ScoreNum;
     public HealthController Health;
+    [SerializeField] private AudioSource PointsSoundEffect;
     public int Dame = 1;
     // private AudioSource playerAudio;
     // public AudioClip TrashSound;
@@ -19,22 +20,8 @@ public class TrashBin1 : MonoBehaviour
                 TrueObject();
                 Destroy(other.gameObject);
             }
-            else if (other.gameObject.CompareTag("InorganicWaste"))
-            {
-                FalseObject();
-                Destroy(other.gameObject);
-            }
-            else if (other.gameObject.CompareTag("RecycledWaste"))
-            {
-                FalseObject();
-                Destroy(other.gameObject);
-            }
-            else if (other.gameObject.CompareTag("ToxicWaste"))
-            {
-                FalseObject();
-                Destroy(other.gameObject);
-            }
-            else if (other.gameObject.CompareTag("ConstructionWaste"))
+            else if ((other.gameObject.CompareTag("InorganicWaste")) || (other.gameObject.CompareTag("RecycledWaste"))||
+            (other.gameObject.CompareTag("ToxicWaste")) || (other.gameObject.CompareTag("ConstructionWaste")))
             {
                 FalseObject();
                 Destroy(other.gameObject);
@@ -43,86 +30,46 @@ public class TrashBin1 : MonoBehaviour
 
         else if (gameObject.tag == "GarbageCan2")
         {
-            if (other.gameObject.CompareTag("OrganicWaste"))
-            {
-                FalseObject();
-                Destroy(other.gameObject);
-            }
-            else if (other.gameObject.CompareTag("InorganicWaste"))
+            if (other.gameObject.CompareTag("InorganicWaste"))
             {
                 TrueObject();
                 Destroy(other.gameObject);
             }
-            else if (other.gameObject.CompareTag("RecycledWaste"))
+            else if ((other.gameObject.CompareTag("RecycledWaste")) || (other.gameObject.CompareTag("OrganicWaste")) ||
+            (other.gameObject.CompareTag("ToxicWaste")) || (other.gameObject.CompareTag("ConstructionWaste")))
             {
                 FalseObject();
                 Destroy(other.gameObject);
             }
-            else if (other.gameObject.CompareTag("ToxicWaste"))
-            {
-                FalseObject();
-                Destroy(other.gameObject);
-            }
-            else if (other.gameObject.CompareTag("ConstructionWaste"))
-            {
-                FalseObject();
-                Destroy(other.gameObject);
-            }
+           
         }
 
 
         else if (gameObject.tag == "GarbageCan3")
         {
-            if (other.gameObject.CompareTag("OrganicWaste"))
-            {
-                FalseObject();
-                Destroy(other.gameObject);
-            }
-            else if (other.gameObject.CompareTag("InorganicWaste"))
-            {
-                FalseObject();
-                Destroy(other.gameObject);
-            }
-            else if (other.gameObject.CompareTag("RecycledWaste"))
+            if (other.gameObject.CompareTag("RecycledWaste"))
             {
                 TrueObject();
                 Destroy(other.gameObject);
             }
-            else if (other.gameObject.CompareTag("ToxicWaste"))
+            else if ((other.gameObject.CompareTag("OrganicWaste")) || (other.gameObject.CompareTag("InorganicWaste")) ||
+            (other.gameObject.CompareTag("ToxicWaste")) || (other.gameObject.CompareTag("ConstructionWaste")))
             {
                 FalseObject();
                 Destroy(other.gameObject);
             }
-            else if (other.gameObject.CompareTag("ConstructionWaste"))
-            {
-                FalseObject();
-                Destroy(other.gameObject);
-            }
+            
         }
 
         else if (gameObject.tag == "GarbageCan4")
         {
-            if (other.gameObject.CompareTag("OrganicWaste"))
-            {
-                FalseObject();
-                Destroy(other.gameObject);
-            }
-            else if (other.gameObject.CompareTag("InorganicWaste"))
-            {
-                FalseObject();
-                Destroy(other.gameObject);
-            }
-            else if (other.gameObject.CompareTag("RecycledWaste"))
-            {
-                FalseObject();
-                Destroy(other.gameObject);
-            }
-            else if (other.gameObject.CompareTag("ToxicWaste"))
+            if (other.gameObject.CompareTag("ToxicWaste"))
             {
                 TrueObject();
                 Destroy(other.gameObject);
             }
-            else if (other.gameObject.CompareTag("ConstructionWaste"))
+            else if ((other.gameObject.CompareTag("ConstructionWaste")) || (other.gameObject.CompareTag("RecycledWaste")) ||
+            (other.gameObject.CompareTag("InorganicWaste")) || (other.gameObject.CompareTag("OrganicWaste")) )
             {
                 FalseObject();
                 Destroy(other.gameObject);
@@ -131,31 +78,17 @@ public class TrashBin1 : MonoBehaviour
 
         else if (gameObject.tag == "GarbageCan5")
         {
-            if (other.gameObject.CompareTag("OrganicWaste"))
-            {
-                FalseObject();
-                Destroy(other.gameObject);
-            }
-            else if (other.gameObject.CompareTag("InorganicWaste"))
-            {
-                FalseObject();
-                Destroy(other.gameObject);
-            }
-            else if (other.gameObject.CompareTag("RecycledWaste"))
-            {
-                FalseObject();
-                Destroy(other.gameObject);
-            }
-            else if (other.gameObject.CompareTag("ToxicWaste"))
-            {
-                FalseObject();
-                Destroy(other.gameObject);
-            }
-            else if (other.gameObject.CompareTag("ConstructionWaste"))
+            if (other.gameObject.CompareTag("ConstructionWaste"))
             {
                 TrueObject();
                 Destroy(other.gameObject);
             }
+            if ((other.gameObject.CompareTag("OrganicWaste")) || (other.gameObject.CompareTag("InorganicWaste")) ||
+            (other.gameObject.CompareTag("RecycledWaste")) || (other.gameObject.CompareTag("ToxicWaste")))
+            {
+                FalseObject();
+                Destroy(other.gameObject);
+            }   
         }
         else if (gameObject.tag == "GarbageCanEnd")
         {
@@ -168,6 +101,7 @@ public class TrashBin1 : MonoBehaviour
         GameManager.Instance.SpawnTrash.SpawnOneByOne();
         ScoreNum.score += 1;
         Debug.Log("+1 score");
+        PointsSoundEffect.Play();
         // playerAudio.PlayOneShot(TrashSound, 1.0f);
     }
     private void FalseObject()

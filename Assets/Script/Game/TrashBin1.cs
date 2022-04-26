@@ -6,6 +6,7 @@ public class TrashBin1 : MonoBehaviour
 {
     public UI_GamePlay ScoreNum;
     public HealthController Health;
+    [SerializeField] private AudioSource PointsSoundEffect;
     public int Dame = 1;
     // private AudioSource playerAudio;
     // public AudioClip TrashSound;
@@ -100,6 +101,7 @@ public class TrashBin1 : MonoBehaviour
         GameManager.Instance.SpawnTrash.SpawnOneByOne();
         ScoreNum.score += 1;
         Debug.Log("+1 score");
+        PointsSoundEffect.Play();
         // playerAudio.PlayOneShot(TrashSound, 1.0f);
     }
     private void FalseObject()

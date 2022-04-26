@@ -5,6 +5,7 @@ using UnityEngine;
 public class ControllHandle5 : MonoBehaviour
 {
     [SerializeField] private float _force;
+    [SerializeField] private AudioSource PushSoundEffect;
     private Rigidbody rb;
     private Vector3 _originalPos;
     private void Start()
@@ -22,6 +23,7 @@ public class ControllHandle5 : MonoBehaviour
             {
                 if (hit.transform.gameObject.CompareTag("Handle5"))
                 {
+                    PushSoundEffect.Play();
                     Debug.Log("click");
                     Push();
                 }

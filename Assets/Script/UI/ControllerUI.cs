@@ -15,6 +15,7 @@ public class ControllerUI : MonoBehaviour
     
     [SerializeField] public UI_HowToPlay HowToPlay;
     [SerializeField] public GameObject audio;
+   
     // [SerializeField] public 
 
      private void Awake() {
@@ -38,4 +39,5 @@ public class ControllerUI : MonoBehaviour
         HighScore.gameObject.SetActive(false);  
         EndGame.gameObject.SetActive(false); 
     }
+    
 }

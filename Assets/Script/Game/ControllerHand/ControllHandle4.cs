@@ -5,6 +5,7 @@ using UnityEngine;
 public class ControllHandle4 : MonoBehaviour
 {
     [SerializeField] private float _force;
+    [SerializeField] private AudioSource PushSoundEffect;
     private Rigidbody rb;
     private Vector3 _originalPos;
     private void Start() {
@@ -17,6 +18,7 @@ public class ControllHandle4 : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if(Physics.Raycast(ray, out hit, 100.0f)){
                 if(hit.transform.gameObject.CompareTag("Handle4")){
+                    PushSoundEffect.Play();
                     Debug.Log("click");
                     Push();
                 }

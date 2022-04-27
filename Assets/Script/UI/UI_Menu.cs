@@ -14,6 +14,8 @@ public class UI_Menu : MonoBehaviour
     [SerializeField] private Button _howToPlay;
     [SerializeField] private GameObject _AudioGame;
 
+    [SerializeField] private Interstitial _Ads;
+
     public bool PlayGame = false;
     
     public void Start()
@@ -37,6 +39,7 @@ public class UI_Menu : MonoBehaviour
     }
    private void OpenHowToPlay()
    {
+      _Ads.Show_InterstitiaAd();
       ControllerUI.Instance.HowToPlay.gameObject.SetActive(true);
       this.gameObject.SetActive(false);
    }

@@ -9,6 +9,7 @@ public class UI_End : MonoBehaviour
     [SerializeField] private Button _exit;
     [SerializeField] private Button _continue;
     
+    
     // [SerializeField] private GameObject _health;
     // public UI_Menu ContinueGame;
     // public HealthController health;
@@ -23,10 +24,12 @@ public class UI_End : MonoBehaviour
     {
        
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+       
     }
     public void Quit()
     {
        Application.Quit();
        Debug.Log("quit");
+       
     }
 }

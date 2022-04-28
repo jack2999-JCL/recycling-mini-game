@@ -14,7 +14,7 @@ public class UI_Menu : MonoBehaviour
     [SerializeField] private Button _howToPlay;
     [SerializeField] private GameObject _AudioGame;
 
-    [SerializeField] private Interstitial _Ads;
+    [SerializeField] private AdsController _Ads;
 
     public bool PlayGame = false;
     

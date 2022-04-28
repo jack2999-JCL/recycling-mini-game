@@ -5,7 +5,7 @@ using UnityEngine;
 public class HealthController : MonoBehaviour
 {
     [SerializeField] private GameObject _AudioGame;
-    [SerializeField] private Interstitial _Ads;
+    public AdsController _Ads;
     public UI_Menu PausePlayGame;
     public GameObject[] Hearts;
     private int Life;
@@ -20,7 +20,9 @@ public class HealthController : MonoBehaviour
     {
         if (Dead == true)
         {
-             _Ads.Show_InterstitiaAd();
+            _Ads.Show_InterstitiaAd();
+            
+
             ControllerUI.Instance.EndGame.gameObject.SetActive(true);
             PausePlayGame.PlayGame = false;
             _AudioGame.gameObject.SetActive(false);

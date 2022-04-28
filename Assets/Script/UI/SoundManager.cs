@@ -6,24 +6,41 @@ using UnityEngine.UI;
 public class SoundManager : MonoBehaviour
 {
 
-    [SerializeField] Slider volumeSlider;
+    [SerializeField] Slider volumeSliderMusic;
+    [SerializeField] Slider volumeSliderEffect;
     
-    public float SliderValue;
+    public float SliderValueMusic;
+    public float SliderValueEffect;
     private bool muted = false;
-    // Start is called before the first frame update
+    
+    // private void OnEnable()
+    // {
+    //     volumeSlider.   
+    // }
     void Start()
     {
-        volumeSlider.value = PlayerPrefs.GetFloat("MusicVolume", SliderValue);
+        volumeSliderMusic.value = PlayerPrefs.GetFloat("MusicVolume", SliderValueMusic);
+        volumeSliderEffect.value = PlayerPrefs.GetFloat("EffectVolume", SliderValueEffect);
     }
-    public void ChangeVolume()
+    public void ChangeVolumeMusic()
     {
-        AudioListener.volume = volumeSlider.value; 
-        volumeSlider.value = PlayerPrefs.GetFloat("MusicVolume", SliderValue);
+        AudioListener.volume = volumeSliderMusic.value; 
+        volumeSliderMusic.value = PlayerPrefs.GetFloat("MusicVolume", SliderValueMusic);
     }
-    public void ChangeSlider(float value)
+    public void ChangeSliderMusic(float value)
     {
-        SliderValue = value;
-        PlayerPrefs.SetFloat("MusicVolume", SliderValue);
+        SliderValueMusic = value;
+        PlayerPrefs.SetFloat("MusicVolume", SliderValueMusic);
     }
 
+    public void ChangeVolumeEffect()
+    {
+        AudioListener.volume = volumeSliderEffect.value; 
+        volumeSliderEffect.value = PlayerPrefs.GetFloat("EffectVolume", SliderValueMusic);
+    }
+    public void ChangeSliderEffect(float value)
+    {
+        SliderValueEffect = value;
+        PlayerPrefs.SetFloat("EffectVolume", SliderValueEffect);
+    }
 }
